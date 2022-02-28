@@ -8,6 +8,14 @@ class Question extends StatelessWidget {
   //that's important and this now receives some input data because it gets some data in its constructor.
   @override
   Widget build(BuildContext context) {
-    return Text(questionText);
+    return Container(
+      width: double.infinity,
+      margin: EdgeInsets.all(10),
+      child: Text(
+        questionText,
+        style: TextStyle(fontSize: 28),
+        textAlign: TextAlign.center,
+      ),
+    );
   }
 }
